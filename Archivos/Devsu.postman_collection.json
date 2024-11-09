@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "7d94cb0b-b6f2-40b2-8596-d39015e0d4e5",
+		"name": "Devsu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30620167"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"name\": \"Marianela Montalvo\",\n        \"gender\": \"Female\",\n        \"age\": 25,\n        \"identification\": \"789012\",\n        \"address\": \"Amazonas y NN.UU.\",\n        \"phone\": \"097548965\",\n        \"password\": 12345,\n        \"status\": true\n    },\n    {\n        \"name\": \"Jose Lema\",\n        \"gender\": \"Male\",\n        \"age\": 30,\n        \"identification\": \"123456\",\n        \"address\": \"Otavalo sn y principal\",\n        \"phone\": \"098254785\",\n        \"password\": 123456,\n        \"status\": true\n    },\n    {\n        \"name\": \"Juan Osorio\",\n        \"gender\": \"Male\",\n        \"age\": 40,\n        \"identification\": \"345678\",\n        \"address\": \"13 junio y Equinoccial\",\n        \"phone\": \"098874587\",\n        \"password\": 123456,\n        \"status\": true\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"name\": \"Jose Lema\",\n    \"gender\": \"Male\",\n    \"age\": 30,\n    \"identification\": \"123456\",\n    \"address\": \"Otavalo sn y principal\",\n    \"phone\": \"098254785\",\n    \"password\": \"1234\",\n    \"status\": true\n  },\n  {\n    \"name\": \"Marianela Montalvo\",\n    \"gender\": \"Female\",\n    \"age\": 25,\n    \"identification\": \"789012\",\n    \"address\": \"Amazonas y NN.UU.\",\n    \"phone\": \"097548965\",\n    \"password\": \"5678\",\n    \"status\": true\n  },\n  {\n    \"name\": \"Juan Osorio\",\n    \"gender\": \"Male\",\n    \"age\": 40,\n    \"identification\": \"345678\",\n    \"address\": \"13 junio y Equinoccial\",\n    \"phone\": \"098874587\",\n    \"password\": \"1245\",\n    \"status\": true\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clientes",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"name\": \"Jose Lema\",\n    \"gender\": \"Male\",\n    \"age\": 30,\n    \"identification\": \"123456\",\n    \"address\": \"Otavalo sn y principal\",\n    \"phone\": \"098254785\",\n    \"password\": \"1234\",\n    \"status\": true\n  },\n  {\n    \"name\": \"Marianela\",\n    \"gender\": \"Female\",\n    \"age\": 25,\n    \"identification\": \"789012\",\n    \"address\": \"Amazonas y NN.UU.\",\n    \"phone\": \"097548965\",\n    \"password\": \"5678\",\n    \"status\": true\n  },\n  {\n    \"name\": \"Juan\",\n    \"gender\": \"Male\",\n    \"age\": 40,\n    \"identification\": \"345678\",\n    \"address\": \"13 junio y Equinoccial\",\n    \"phone\": \"098874587\",\n    \"password\": \"1245\",\n    \"status\": true\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes/20f37a00-750a-4ef0-b9e1-1454f45621f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"20f37a00-750a-4ef0-b9e1-1454f45621f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "clientes",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"name\": \"Jose Lema\",\n    \"gender\": \"Male\",\n    \"age\": 30,\n    \"identification\": \"123456\",\n    \"address\": \"Otavalo sn y principal\",\n    \"phone\": \"098254785\",\n    \"password\": \"1234\",\n    \"status\": true\n  },\n  {\n    \"name\": \"Marianela Montalvo\",\n    \"gender\": \"Female\",\n    \"age\": 25,\n    \"identification\": \"789012\",\n    \"address\": \"Amazonas y NN.UU.\",\n    \"phone\": \"097548965\",\n    \"password\": \"5678\",\n    \"status\": true\n  },\n  {\n    \"name\": \"Juan Osorio\",\n    \"gender\": \"Male\",\n    \"age\": 40,\n    \"identification\": \"345678\",\n    \"address\": \"13 junio y Equinoccial\",\n    \"phone\": \"098874587\",\n    \"password\": \"1245\",\n    \"status\": true\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clientes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"accountNumber\": 478758,\n        \"accountType\": \"Ahorros\",\n        \"balance\": 2000,\n        \"status\": true,\n        \"cliente\": \"Jose Lema\",\n        \"clientId\": \"24dfbf7a-5cd1-4c0b-bd79-70830baeb7f6\"\n    },\n    {\n        \"accountNumber\": 225487,\n        \"accountType\": \"Corriente\",\n        \"balance\": 100,\n        \"status\": true,\n        \"cliente\": \"Marianela Montalvo\",\n        \"clientId\": \"ae7a451f-ec3d-4691-891c-141ccc0005cb\"\n    },\n    {\n        \"accountNumber\": 495878,\n        \"accountType\": \"Ahorros\",\n        \"balance\": 0,\n        \"status\": true,\n        \"cliente\": \"Juan Osorio\",\n        \"clientId\": \"e9a8cb0e-716c-4488-bbeb-6ed15c777348\"\n    },\n    {\n    \"accountNumber\": 225487,\n    \"accountType\": \"Ahorros\",\n    \"balance\": 540,\n    \"status\": true,\n    \"cliente\": \"Marianela Montalvo\",\n    \"clientId\": \"ae7a451f-ec3d-4691-891c-141ccc0005cb\"\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuenta Corriente Jose Lemos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"accountNumber\": 478758,\n        \"accountType\": \"Ahorros\",\n        \"balance\": 2000,\n        \"status\": true,\n        \"cliente\": \"Jose Lema\",\n        \"clientId\": \"8b8ac07e-3276-413f-9d3a-6f38154815c7\"\n    },\n    {\n        \"accountNumber\": 225487,\n        \"accountType\": \"Corriente\",\n        \"balance\": 100,\n        \"status\": true,\n        \"cliente\": \"Marianela Montalvo\",\n        \"clientId\": \"817b0994-644f-4c88-b9d8-03ca3c90e93b\"\n    },\n    {\n        \"accountNumber\": 495878,\n        \"accountType\": \"Ahorros\",\n        \"balance\": 0,\n        \"status\": true,\n        \"cliente\": \"Juan Osorio\",\n        \"clientId\": \"0018fd9c-3703-4ea2-9060-388743289c68\"\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountNumber\": \"1234567890\",\n  \"accountType\": \"Checking\",\n  \"balance\": 1000.0,\n  \"clientId\": \"20f37a00-750a-4ef0-b9e1-1454f45621f2\",\n  \"status\": true\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountNumber\": \"1234567890\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuentas/916aefa8-72eb-41fc-9983-fb2fd02192b2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuentas",
+						"916aefa8-72eb-41fc-9983-fb2fd02192b2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cuentas",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountNumber\": \"123456789\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/cuentas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimientos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"accountId\": \"1f52d922-a66c-4f57-b628-1717b2c6e53b\",\n        \"type\": \"Ahorros\",\n        \"status\": true,\n        \"amount\": -540,\n        \"credit\": false,\n        \"transactionDate\": \"2024-11-08T16:36:30\",\n        \"client\": \"Jose Lema\",\n        \"clientId\": \"24dfbf7a-5cd1-4c0b-bd79-70830baeb7f6\"\n    },\n    {\n        \"accountId\": \"ce7d087a-6743-4e75-8cd7-97dbe39dc4a8\",\n        \"type\": \"Corriente\",\n        \"amount\": 600,\n        \"credit\": true,\n        \"transactionDate\": \"2024-11-08T16:36:30\",\n        \"client\": \"Marianela Montalvo\",\n        \"clientId\": \"ae7a451f-ec3d-4691-891c-141ccc0005cb\"\n    },\n    {\n        \"accountId\": \"b4a569d7-4ca5-4d7f-b6db-2a58ecb3fd47\",\n        \"type\": \"Ahorros\",\n        \"amount\": 150,\n        \"credit\": true,\n        \"transactionDate\": \"2024-11-08T16:36:30\",\n        \"client\": \"Juan Osorio\",\n        \"clientId\": \"e9a8cb0e-716c-4488-bbeb-6ed15c777348\"\n    }\n]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/movimientos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimientos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountNumber\": \"1234567890\",\n  \"accountType\": \"Checking\",\n  \"balance\": 1000.0,\n  \"clientId\": \"20f37a00-750a-4ef0-b9e1-1454f45621f2\",\n  \"status\": true\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/movimientos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimientos",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"transactionDate\": \"2024-11-08T16:36:00\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/movimientos/95c3224e-215b-4c90-801d-4c7df52c18ef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movimientos",
+						"95c3224e-215b-4c90-801d-4c7df52c18ef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movimientos",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountNumber\": \"123456789\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/movimientos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"movimientos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reportes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"accountNumber\": \"1234567890\",\n  \"accountType\": \"Checking\",\n  \"balance\": 1000.0,\n  \"clientId\": \"20f37a00-750a-4ef0-b9e1-1454f45621f2\",\n  \"status\": true\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/reportes?fecha=2024-11-01,2024-11-09&client=ae7a451f-ec3d-4691-891c-141ccc0005cb\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"reportes"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2024-11-01,2024-11-09"
+						},
+						{
+							"key": "client",
+							"value": "ae7a451f-ec3d-4691-891c-141ccc0005cb\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
